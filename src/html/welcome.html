@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIP Style Barber</title>
+    <link href="../styles/index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <img src="../images/wallpaper.jpg" />
+      </div>
+      <div class="right-column">
+        <div class="form-container">
+          <p class="title">VIP Style Barber</p>
+          <p class="subtitle">
+            Sharp Cuts, Smooth Experience – Your Barber Shop, Digitized! ✨
+          </p>
+          <p class="description">
+            Please enter your credentials to run your workspace
+          </p>
+          <form id="userForm" class="userForm">
+            <div class="form-group">
+              <input
+                type="text"
+                id="field1"
+                name="field1"
+                placeholder="Username"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                id="field2"
+                name="field2"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <button type="submit" class="submit-btn">Sign In</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="../renders/welcome.js" defer></script>
+  </body>
+</html>

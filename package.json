@@ -1,0 +1,19 @@
+{
+  "name": "barbershop_app",
+  "version": "1.0.0",
+  "description": "This is a desktop application destinated for a baber to manage his shop and co-workers",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "abdoulay-fqr",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^36.4.0"
+  },
+  "devDependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "tailwindcss": "^3.4.3"
+  }
+}
