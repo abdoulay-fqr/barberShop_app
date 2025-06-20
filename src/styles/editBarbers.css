@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "MontserratSB";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsM";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsSB";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PoppinsR";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NunitoSans";
+  src: url("../fonts/NunitoSans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px 200px;
+}
+
+.header {
+  margin-top: 50px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 200px;
+  gap: 400px;
+}
+
+.back_icon {
+  height: 35px;
+}
+
+.title {
+  font-size: 40px;
+  font-family: "MontserratSB", sans-serif;
+  text-align: center;
+}
+
+.layout {
+  width: 100%;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 30px;
+
+  align-items: center;
+}
+
+.add_button_container {
+  width: 100%;
+
+  display: flex;
+  gap: 30px;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.first_last {
+  width: 100%;
+
+  display: flex;
+  gap: 30px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.barber_line {
+  width: 100%;
+
+  display: flex;
+  gap: 30px;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-8 {
+  background-color: rgba(102, 82, 175, 0.26);
+  border-radius: 3px;
+  border: 1px solid #312070;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #312070;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "PoppinsM";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: rgba(49, 32, 112, 0.26);
+  color: #312070;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, 0.15);
+}
+
+.button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
