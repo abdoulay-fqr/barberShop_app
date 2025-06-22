@@ -58,9 +58,22 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 0 200px;
-  gap: 400px;
+}
+
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back_icon {
@@ -79,7 +92,7 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 30px;
+  gap: 70px;
 
   align-items: center;
 }
@@ -88,10 +101,12 @@ body {
   width: 100%;
 
   display: flex;
-  gap: 30px;
+  gap: 20px;
 
   justify-content: flex-end;
   align-items: center;
+
+  margin-top: 50px;
 }
 
 .first_last {
@@ -154,4 +169,46 @@ body {
   background-color: #a0c7e4;
   box-shadow: none;
   color: #2c5777;
+}
+
+.button-9 {
+  background-color: rgba(255, 193, 193, 0.26);
+  border-radius: 3px;
+  border: 1px solid #ff1c1c;
+  box-shadow: rgba(255, 255, 255, 0.7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #ff1c1c;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "PoppinsM";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-9:hover,
+.button-9:focus {
+  background-color: rgba(112, 32, 32, 0.26);
+  color: #ff1c1c;
+}
+
+.button-9:focus {
+  box-shadow: 0 0 0 4px rgba(255, 0, 0, 0.15);
+}
+
+.button-9:active {
+  background-color: #e4a0a0;
+  box-shadow: none;
+  color: #772c2c;
 }
