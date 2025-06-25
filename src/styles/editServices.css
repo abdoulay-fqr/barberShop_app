@@ -193,14 +193,14 @@ body {
   color: #772c2c;
 }
 
-.barbers_list {
+.services_list {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.barber {
+.service {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -225,12 +225,12 @@ body {
   align-items: center;
 }
 
-.barber_icon {
+.service_icon {
   height: 40px;
   width: 40px;
 }
 
-.barber_name {
+.service_name {
   font-family: "NunitoSans", sans-serif;
   font-size: 24px;
   font-weight: 400;

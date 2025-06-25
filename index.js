@@ -30,7 +30,7 @@ function createWindow() {
     icon: path.join(__dirname, "assets", "icon.png"),
   });
 
-  mainWindow.loadFile("src/html/editBarbers.html");
+  mainWindow.loadFile("src/html/home.html");
   mainWindow.on("closed", function () {
     mainWindow = null;
   });
