@@ -220,6 +220,7 @@ body {
 
 .scrollable {
   overflow-y: auto;
+  width: 100%;
 }
 
 .affectation {
@@ -344,4 +345,21 @@ label {
 
 .thirdline {
   font-size: 30px;
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 9999;
+  display: none;
+}
+
+.content-blurred {
+  filter: blur(3px);
+  pointer-events: none;
 }

@@ -1,4 +1,4 @@
-const { app, BrowserWindow, screen } = require("electron");
+const { app, BrowserWindow, screen, ipcMain } = require("electron");
 const path = require("path");
 
 try {
@@ -35,6 +35,37 @@ function createWindow() {
     mainWindow = null;
   });
 }
+
+ipcMain.handle("show-popup", () => {
+  const parentWindow = BrowserWindow.getFocusedWindow();
+
+  parentWindow.webContents.send("show-overlay");
+
+  const popup = new BrowserWindow({
+    width: 600,
+    height: 300,
+    parent: parentWindow,
+    modal: true,
+    show: false,
+    resizable: false,
+    frame: false,
+    webPreferences: {
+      nodeIntegration: false,
+      contextIsolation: true,
+      preload: path.join(__dirname, "preload.js"),
+    },
+  });
+
+  popup.loadFile("src/html/popups/barberslist.html");
+
+  popup.once("ready-to-show", () => {
+    popup.show();
+  });
+
+  popup.on("closed", () => {
+    parentWindow.webContents.send("hide-overlay");
+  });
+});
 
 app.whenReady().then(() => {
   createWindow();
